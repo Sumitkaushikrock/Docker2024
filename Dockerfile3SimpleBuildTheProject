@@ -1,0 +1,4 @@
+FROM sumitkaushik445/jdk17gradle8
+COPY ./src ./src
+COPY ./build.gradle ./build.gradle
+RUN gradle build

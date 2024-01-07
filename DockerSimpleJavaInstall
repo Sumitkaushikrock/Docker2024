@@ -1,0 +1,9 @@
+#dockerFROM alpine
+# docker build -t sumitkaushik445/simplejavaimage .
+# docker images
+# docker run sumitkaushik445/simplejavaimage
+# docker ps
+RUN apk ubuntu
+#RUN apk add openjdk11
+RUN curl -s "https://get.sdkman.io" | bash
+CMD java --version

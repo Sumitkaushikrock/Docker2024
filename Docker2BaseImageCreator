@@ -1,0 +1,12 @@
+FROM alpine
+
+#RUN apt-get update
+#RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+#RUN apt-get -qq -y install curl wget unzip zip
+
+#RUN curl -s "https://get.sdkman.io" | bash
+#RUN source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+RUN apk --no-cache add openjdk17 --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
+RUN apk add bash vim curl wget jq docker git tar unzip bash-completion ca-certificates gradle maven
+
